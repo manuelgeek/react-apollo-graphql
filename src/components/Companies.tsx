@@ -4,6 +4,7 @@ interface Company {
   id: number,
   name: string,
   bio: string
+  contactPerson: string
 }
 
 interface Companies {
@@ -16,6 +17,7 @@ const Companies = gql`
             bio
             name
             id
+            contactPerson
         }
     }
 `;
@@ -26,10 +28,10 @@ function CompaniesList(): JSX.Element {
   if (loading) return<p>Loading...</p>;
   if (error) return <p>Error :(</p>;
 
-  return <>{ data?.companies.map(({ id, bio, name }) => (
+  return <>{ data?.companies.map(({ id, bio, name, contactPerson }) => (
     <div key={id}>
       <p>
-        {name} <br/> {bio} <br/>
+        {name} <br/> {contactPerson} <br/>
       </p>
     </div>
   ))
