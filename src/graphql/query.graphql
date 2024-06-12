@@ -1,0 +1,8 @@
+query getCompanies {
+  companies {
+    bio
+    name
+    id
+    contactPerson
+  }
+}

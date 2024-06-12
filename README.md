@@ -1,7 +1,14 @@
 # react-apollo-graphql
 
 ## Set up
-`npm install`
+`yarn install`
+`yarn generate`
 
 ## Run
-`npm run dev`
+`yarn dev`
+
+
+## Libraries
+- GraphQL Codegen
+- Apollo GraphQL
+- TS

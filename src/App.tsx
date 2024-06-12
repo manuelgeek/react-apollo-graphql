@@ -2,6 +2,7 @@ import { useState } from "react"
 import logo from "./logo.svg"
 import "./App.css"
 import CompaniesList from "./components/Companies"
+import CompaniesList1 from "./components/CompaniesWithCodeGen"
 
 function App() {
   const [count, setCount] = useState(0)
@@ -40,6 +41,7 @@ function App() {
             Vite Docs
           </a>
         </p>
+        <CompaniesList1 />
       </header>
     </div>
   )
