@@ -1,7 +1,7 @@
-import { useState } from 'react'
-import logo from './logo.svg'
-import './App.css'
-import CompaniesList from "./components/Companies";
+import { useState } from "react"
+import logo from "./logo.svg"
+import "./App.css"
+import CompaniesList from "./components/Companies"
 
 function App() {
   const [count, setCount] = useState(0)
@@ -16,7 +16,7 @@ function App() {
             count is: {count}
           </button>
         </p>
-        <br/>
+        <br />
         <CompaniesList />
         <p>
           Edit <code>App.tsx</code> and save to test HMR updates.
@@ -30,7 +30,7 @@ function App() {
           >
             Learn React
           </a>
-          {' | '}
+          {" | "}
           <a
             className="App-link"
             href="https://vitejs.dev/guide/features.html"
